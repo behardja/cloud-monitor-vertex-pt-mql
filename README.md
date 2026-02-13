@@ -1,6 +1,6 @@
 # cloud-monitor-vertex-pt-mql
 
-# Vertex AI — Tokens Per Query by Type
+# Vertex AI - Tokens Per Query by Type
 
 MQL query that can be used on Google Cloud Monitoring dashboards and metrics explorer.
 Calculates the **average tokens per query**, broken down by token type (input, output, image, reasoning).
