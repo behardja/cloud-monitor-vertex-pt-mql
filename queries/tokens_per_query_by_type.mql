@@ -1,0 +1,19 @@
+{
+  fetch aiplatform.googleapis.com/PublisherModel
+  | metric 'aiplatform.googleapis.com/publisher/online_serving/token_count'
+  | align delta(7d)
+  | every 7d
+  | group_by [resource.model_user_id, resource.location, metric.type],
+      [total_tokens: aggregate(value.token_count)]
+
+  ;
+
+  fetch aiplatform.googleapis.com/PublisherModel
+  | metric 'aiplatform.googleapis.com/publisher/online_serving/model_invocation_count'
+  | align delta(7d)
+  | every 7d
+  | group_by [resource.model_user_id, resource.location],
+      [total_requests: aggregate(value.model_invocation_count)]
+}
+| join
+| value [tokens_per_query: val(0) / val(1)]
