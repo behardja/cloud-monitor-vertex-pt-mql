@@ -11,15 +11,7 @@ Calculates the **average tokens per query**, broken down by token type (input, o
 2. Switch to **MQL** mode
 3. Paste the contents of `tokens_per_query_by_type.mql`
 4. Adjust the time window (`7d`) as needed
-
-## Output
-
-| metric.type        | Description                        |
-|--------------------|------------------------------------|
-| `input`            | Input text tokens per query        |
-| `input_image`      | Image input tokens per query       |
-| `output`           | Output text tokens per query       |
-| `output_reasoning` | Reasoning output tokens per query  |
+5. View Results in Table tab
 
 ## Additional Reference
 
