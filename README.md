@@ -2,8 +2,6 @@
 
 MQL queries for Google Cloud Monitoring dashboards and Metrics Explorer to help measure and plan for Vertex AI [Provisioned Throughput](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/provisioned-throughput/measure-provisioned-throughput).
 
-- [Provisioned Throughput Price Calculator](https://console.cloud.google.com/vertex-ai/provisioned-throughput/price-estimate)
-
 ## Queries
 
 | File | Description |
