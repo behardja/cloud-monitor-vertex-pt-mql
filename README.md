@@ -9,7 +9,7 @@ MQL queries for Google Cloud Monitoring dashboards and Metrics Explorer to help 
 | File | Description |
 |---|---|
 | `tokens_per_query_by_type.mql` | Average tokens per query, broken down by token type (input, output, image, reasoning) over a 7-day window |
-| `avg_qps_7d.mql` | Average queries per second (QPS) over a 7-day window, grouped by model and location |
+| `qps_avg.mql` | Average queries per second (QPS) over a 7-day window, grouped by model and location |
 
 ## Usage
 
