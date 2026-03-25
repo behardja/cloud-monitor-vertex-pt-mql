@@ -1,0 +1,7 @@
+fetch aiplatform.googleapis.com/PublisherModel
+| metric 'aiplatform.googleapis.com/publisher/online_serving/model_invocation_count'
+| align delta(7d)
+| every 7d
+| group_by [resource.model_user_id, resource.location],
+    [total_requests: aggregate(value.model_invocation_count)]
+| value [avg_qps: total_requests / 604800]
